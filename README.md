@@ -1,47 +1,70 @@
-# Drop Tables 🍀
----
-## Demo Project
----
-### [Presentation](https://microsoft.sharepoint.com/:p:/t/GamingDeveloperExperiencesGDX/EVoS115OuHtEjrEm5g4RiX4BXi94Uf9KHqU7L8XxETN-Xg?e=wzVfXF)
-### Known Bugs / Quirks
-- must 'visualize' a drop table before it can be rolled
-- roll section is hard-coded and not linked to execute API currently
-- poop and sword animations are hard-coded tied to the junk item and sword item
-- not responsive webapp
-- the roll chest table is linked to a library for exporting 3d models so I am unsure if this will work as dormant forever
-- first time really using react, something like redux would have probably helped (from my brief research)
-- no error messages on front end
-- dont think editing certain parts of a pool is fully functional / responsive on front 
+# Getting Started with Create React App
 
-### Usage Notes
-- In `src/controllers/Controller.ts`, fill in the credentials at the top (note: only certain titles have access to drop tables currently)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-## Handoff
----
-### Relevant Resources
-- [Dev Spec](https://microsoft-my.sharepoint.com/:w:/p/t-furiebilly/ET9V1cZ_zjZFpH--EA7Mc80B9EG79BGophShZBwUc6q59w?e=2eFUjZ)
-- [PM Spec](https://microsoft.sharepoint.com/:w:/t/GamingDeveloperExperiencesGDX/ERApU9mZbXVGvhvuUsVPrnIBwh9YcKCa4F2Zc9R3Q8iV5A?e=zNPS6p)
-- [Demo Project](https://dev.azure.com/playfab/PlayFab/_git/BillyInterProject)
+In the project directory, you can run:
 
+### `npm start`
 
-### Current State
-#### Completed
-- Catalog CRUD APIs for Drop Tables
-- MongoDB Database Containers for Draft / Published Drop Table Details
-- Catalog Evaluate Drop Table API
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-#### In Progress
-- Main Server Error Message Builders for Drop Table APIs [PR](https://github.com/PlayFab/pf-main/pull/18898)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-#### Issues
-- GetEntityItems API to work for Drop Tables (Drop Table items not returning DropTableDetails in response)
-- Search API to work for Drop Tables (Drop Table items not returning DropTableDetails in response)
-- APIs to have end-to-end tests
+### `npm test`
 
-#### Notes
-- Maybe adding ExpandDropTableDetails (similar to ExpandItemReferences) functionality?
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Next Steps
-- Add Drop Table Execution API to Inventory
-- Create Game Manager / Future UX
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
