@@ -1,0 +1,261 @@
+
+.get-page {
+  display: flex;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-top: 160px;
+  align-items: flex-start;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 20px;
+  align-items: flex-start;
+  position: relative;
+}
+
+
+.card-and-button-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.details-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #333333;
+}
+
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form-section .MuiTextField-root {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-section .MuiInputBase-input {
+  font-size: 14px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+.custom-button, .custom-clear-button, .get-inventory-button {
+  border-color: rgb(0, 132, 255) !important;
+  color: rgb(0, 132, 255) !important;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.custom-clear-button {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.custom-button:hover, .custom-clear-button:hover, .get-inventory-button:hover {
+  background-color: rgba(0, 132, 255, 0.1) !important;
+}
+
+
+.separator {
+  width: 1px;
+  background-color: #e0e0e0;
+  align-self: stretch;
+  margin: 0 20px;
+}
+
+.details-card {
+  margin-top: 20px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  min-width: 450px;  /* Fixed width */
+  height: auto;  /* Auto height */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 1s !important; 
+}
+
+.details-card:hover {
+  transform: translateY(-5px);
+}
+
+.details-card .MuiCardHeader-root {
+  background-color: #ffffff !important;
+  padding: 10px 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.details-card .MuiCardHeader-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.details-card.coupon-details .MuiCardHeader-title {
+  color: rgb(226, 121, 100) !important; /* Red color for Coupon Details */
+}
+
+.details-card.batch-details .MuiCardHeader-title {
+  color: rgb(91, 144, 204) !important; /* Blue color for Batch Details */
+}
+
+.details-card .MuiCardContent-root {
+  padding: 24px 40px;
+  padding-top: 10px; /* Increase the top padding */
+}
+
+.details-card .MuiTypography-body1 {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.6;
+  margin-left: 4px;
+  margin-top: 16px; /* Control the spacing between each content item */
+}
+
+.details-card .MuiTypography-body1 strong {
+  color: #333333;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Status text styles */
+.details-card .status-active .status-text {
+  color: rgb(97, 211, 97) !important; /* Green color for Active status */
+}
+
+.details-card .status-revoked .status-text {
+  color: #d60000 !important; /* Red color for Revoked status */
+}
+
+.details-card .status-redeemed .status-text {
+  color: rgb(91, 144, 204) !important; /* Blue color for Redeemed status */
+}
+
+/* Icon styles */
+.redeem-icon {
+  vertical-align: middle;
+  margin-left: 2px;
+  width: 24px;
+  height: 24px;
+}
+
+/* Export button container styles */
+.export-button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.export-button {
+  border-color: rgb(0, 132, 255) !important;
+  color: rgb(0, 132, 255) !important;
+  padding: 5px 10px;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.export-button:hover {
+  background-color: lightblue !important;
+}
+
+@media (max-width: 768px) {
+  .get-page {
+    flex-direction: column;
+  }
+
+  .form-container,
+  .card-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .separator {
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+  }
+
+  .details-card {
+    max-width: none;
+    min-width: 100%;
+    height: auto;
+  }
+}
+
+/* Shake animation */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+/* Success and error message styles */
+.success-message, .error-message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.fade-out {
+  animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  70% { opacity: 1; }
+  100% { opacity: 0; }
+}

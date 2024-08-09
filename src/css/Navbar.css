@@ -1,0 +1,99 @@
+.navbar {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: none !important; /* Ensure no shadow */
+  border-bottom: none !important; /* Remove bottom border */
+  height: 100px; /* Increase the height to accommodate larger images */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0; /* Remove horizontal padding */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.toolbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 20px; /* Add horizontal padding */
+}
+
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: flex-start; /* Align items to the top by default */
+  margin: 0; /* Remove margin */
+}
+
+.nav-background {
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 50px; /* Move the image down to fit within the navbar, adjust this value as needed */
+}
+
+.navbar-middle {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Adjust this value to move the logo and text to the right */
+}
+
+.nav-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: black;
+  font-size: 32px !important; /* Set font size to 32px and use !important */
+  margin-left: 10px; /* Space between logo and text */
+}
+
+.secondary-menu {
+  background-color: white; /* Match background color to main navbar */
+  padding: 10px 0px; /* Add padding for spacing */
+  position: fixed;
+  top: 100px; /* Position below the main navbar */
+  width: 100%;
+  z-index: 999; /* Ensure it is above other content */
+  border-bottom: 1px solid #ddd !important; /* Add bottom border to secondary menu */
+}
+
+.secondary-menu-content {
+  display: flex;
+  justify-content: center; /* Center the menu items */
+  align-items: center;
+  gap: 80px; /* Add gap between menu items */
+}
+
+.menu-item {
+  font-size: 18px !important; /* Adjust font size to 34px and use !important */
+  color: #555; /* Adjust color as needed */
+  margin-right: 20px; /* Adjust spacing as needed */
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu-item::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(121, 146, 168);
+  transition: width .3s;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+}
+
+.menu-item:last-child {
+  margin-right: 0; /* Remove margin for the last item */
+}
+
+.content {
+  margin-top: 160px; /* Add margin to push content below the secondary menu */
+  padding: 20px; /* Add padding for content */
+}
